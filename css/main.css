@@ -343,7 +343,7 @@ section {
 }
 
 #partner {
-  height: 410px;
+  height: 450px;
   background: #F7F9FA;
   text-align: center;
   justify-items: center;
@@ -378,6 +378,20 @@ section {
   }
 }
 
+#map {
+  height: 400px;
+}
+
+.map-canvas {
+  overflow: hidden;
+  width: 100%;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 680px) {
+  #map {
+    height: 350px;
+  }
+}
 #footer {
   height: 250px;
 }
