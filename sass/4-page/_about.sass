@@ -1,0 +1,45 @@
+#about
+    background: $grey
+    height: 700px
+    text-align: center
+
+.main-about
+    margin-top: 40px
+
+.content-about
+    margin: 40px
+    display: flex
+    align-items: center
+    height: 100%
+
+.about-l
+    text-align: left
+    p
+        font-weight: 300
+        line-height: 1.5
+
+.about-r
+    max-width: 500px
+    width: 100%
+    height: auto
+    border-image: 2px
+
+.about-l, .about-r
+    display: block
+    padding: 20px
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 1000px)
+    #about
+        height: 900px
+        text-align: center
+    .content-about
+        display: block
+        margin: 0
+    .about-r, .about-l
+        padding: 0
+    .about-r
+        display: inline !important
+
+    

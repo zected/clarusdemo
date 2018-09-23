@@ -1,0 +1,125 @@
+#servis-header
+    overflow: hidden
+    margin: 0
+    height: 650px
+    z-index: 1
+    
+.bg-servis
+    background-image: url('/asset/img/bg-slider3.jpg')
+    background-size: cover
+    position: relative
+    background-repeat: no-repeat
+    z-index: -5
+    &:before
+        position: absolute
+        content: ""
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-image: linear-gradient(302deg, rgba(255,203,49,1) 0%, rgba(252,67,50,1) 100%)
+        opacity: 0.75
+        z-index: -2
+
+// Main Servis
+
+#servis-article
+    margin: 120px 0
+    color: white
+    width: 50%
+    text-align: left
+    display: block
+
+.servis-intro
+    top: 50%
+    p 
+        font-size: 18px
+        line-height: 1.6
+        margin-bottom: 100px
+
+
+.servis-scroll
+    margin: 120px auto
+
+.our-servis
+    width: 70%
+    margin: 80px auto 40px auto
+
+    h3 
+        text-transform: uppercase
+        text-align: center
+        letter-spacing: 0.1em
+
+    p
+        font-size: 18px
+        line-height: 1.6
+
+.list-servis
+    margin-top: 40px
+    display: flex
+    color: white
+    justify-content: center
+
+    a
+        color: $black
+        text-decoration: none
+        pointer-events: none
+        font-size: 16px
+
+    ul 
+        padding: 0
+
+    li 
+        line-height: 1.8
+        margin: 0 0 0 16px
+        list-style-image: url('/asset/icon/icon-list.png')
+
+
+.list-r, .list-l
+    display: block
+
+.list-r
+    margin-left: 20px
+.list-l
+    margin-right: 20px
+
+//  Servis Card
+//     text-align: center
+    // background-image: url('/asset/img/bg-ornament.png')
+    // background-size: cover
+
+
+
+    // only screen and (max-width: 750px)
+    //     height: 700px
+
+    //  only screen and (max-width: 680px)
+    //     height: 900px
+
+
+// .servis-fitur
+//     margin: 60px
+//     img 
+//         height: 24px
+
+// .card-servis
+//     display: grid
+//     grid-template-columns: repeat(2, auto)
+//     grid-gap: 20px
+
+//    only screen and (max-width: 680px)
+//         grid-template-columns: repeat(1, auto)
+//         grid-gap: 16px
+
+//     p
+//         margin: 16px
+//         font-size: 12px
+
+//     img 
+//         height: 64px
+
+// .cardServis
+//     background: white
+//     padding: 30px
+//     border-radius: 8px
+//     box-shadow: 0 5px 20px 0px rgba(0,0,0, 0.16)
