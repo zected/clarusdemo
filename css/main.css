@@ -197,7 +197,7 @@ section {
 #article {
   width: 70%;
   z-index: 1;
-  margin: 80px auto 50px auto;
+  margin: 100px auto;
 }
 #article h2 {
   font-weight: 500;
@@ -210,22 +210,6 @@ section {
   text-decoration: none;
   color: white;
 }
-#article .button {
-  font-weight: 500;
-  border: 2px solid #FFCB31;
-  color: #FFCB31;
-  display: block;
-  width: 200px;
-  margin: auto;
-  padding: 15px 30px;
-  border-radius: 100px;
-  transition: all 0.2s ease;
-}
-#article .button:hover, #article .button:active, #article .button:focus {
-  background: #FFCB31;
-  color: white;
-  transform: translateY(2px);
-}
 #article .underlineSmall {
   display: none;
 }
@@ -237,6 +221,24 @@ section {
   transition: all 0.2s ease;
 }
 #article .label:hover, #article .label:active, #article .label:focus {
+  transform: translateY(2px);
+}
+
+.button {
+  font-weight: 500;
+  color: #FFCB31 !important;
+  text-decoration: none;
+  border: 2px solid #FFCB31;
+  display: block;
+  width: 200px;
+  margin: auto;
+  padding: 15px 30px;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+.button:hover, .button:active, .button:focus {
+  background: #FFCB31;
+  color: white !important;
   transform: translateY(2px);
 }
 
@@ -279,22 +281,22 @@ section {
   }
 }
 #main {
-  height: 850px;
+  height: 950px;
   text-align: center;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #main {
-    height: 1380px;
+    height: 1450px;
   }
 }
 @media only screen and (min-width: 370px) and (max-width: 480px) {
   #main {
-    height: 1420px;
+    height: 1520px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 369px) {
   #main {
-    height: 1680px;
+    height: 1720px;
   }
 }
 #main h3 {
@@ -336,10 +338,6 @@ section {
 }
 #main .link-servis a {
   text-decoration: none;
-  color: #0070C6;
-}
-#main .underlineSmall {
-  background-color: #0070C6 !important;
 }
 
 #partner {
@@ -379,12 +377,13 @@ section {
 }
 
 #map {
-  height: 400px;
+  height: 550px;
 }
 
 .map-canvas {
   overflow: hidden;
   width: 100%;
+  text-align: center;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 680px) {
@@ -548,7 +547,7 @@ section {
   justify-content: center;
 }
 .list-servis a {
-  color: #292E33;
+  color: #FFCB31;
   text-decoration: none;
   pointer-events: none;
   font-size: 16px;
@@ -576,7 +575,7 @@ section {
 
 #about {
   background: #F7F9FA;
-  height: 700px;
+  height: 750px;
   text-align: center;
 }
 
@@ -596,7 +595,7 @@ section {
 }
 .about-l p {
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .about-r {
@@ -609,6 +608,11 @@ section {
 .about-l, .about-r {
   display: block;
   padding: 20px;
+}
+
+.vision p {
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1000px) {

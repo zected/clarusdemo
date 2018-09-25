@@ -1,7 +1,7 @@
 #article
     width: 70%
     z-index: 1
-    margin: 80px auto 50px auto
+    margin: 100px auto
 
     h2 
         font-weight: 500
@@ -17,22 +17,6 @@
         text-decoration: none
         color: white
 
-    .button
-        font-weight: 500
-        border: 2px solid $yellow
-        color: $yellow
-        display: block
-        width: 200px
-        margin: auto
-        padding: 15px 30px
-        border-radius: 100px
-        transition: all 0.2s ease
-
-        &:hover, &:active, &:focus
-            background: $yellow
-            color: white
-            transform: translateY(2px)
-
     .underlineSmall
             display: none
     .label
@@ -44,6 +28,23 @@
 
         &:hover, &:active, &:focus
             transform: translateY(2px)
+
+.button
+    font-weight: 500
+    color: $yellow !important
+    text-decoration: none
+    border: 2px solid $yellow
+    display: block
+    width: 200px
+    margin: auto
+    padding: 15px 30px
+    border-radius: 100px
+    transition: all 0.2s ease
+
+    &:hover, &:active, &:focus
+        background: $yellow
+        color: white !important
+        transform: translateY(2px)
 
     
 .scroll-downs
