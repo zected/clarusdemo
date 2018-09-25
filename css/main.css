@@ -95,6 +95,7 @@ body a:visited {
   width: 85%;
   max-width: 1100px;
   margin: auto;
+  z-index: 100;
 }
 @media only screen and (max-width: 950px) {
   .wrapper {
@@ -111,6 +112,7 @@ section {
   display: flex;
   margin-top: 20px;
   padding: 0;
+  z-index: 100;
 }
 .main-nav li {
   list-style: none;
@@ -196,8 +198,9 @@ section {
 }
 #article {
   width: 70%;
-  z-index: 1;
   margin: 100px auto;
+  color: white;
+  z-index: 50;
 }
 #article h2 {
   font-weight: 500;
@@ -213,15 +216,20 @@ section {
 #article .underlineSmall {
   display: none;
 }
-#article .label {
+
+.label {
   display: inline-block;
   font-weight: 500;
   margin: 10px 0px;
   font-size: 14px;
   transition: all 0.2s ease;
 }
-#article .label:hover, #article .label:active, #article .label:focus {
+.label:hover, .label:active, .label:focus {
   transform: translateY(2px);
+}
+
+a.label {
+  text-decoration: none;
 }
 
 .button {
@@ -250,7 +258,7 @@ section {
   left: 0;
   width: 18px;
   height: 18px;
-  z-index: -1;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -307,36 +315,43 @@ section {
   font-size: 18px;
   margin: 16px;
 }
-#main img {
+
+.fitur {
+  margin: 60px 10px;
+  text-align: center;
+}
+.fitur p {
+  font-size: 14px !important;
+}
+.fitur img {
   height: 64px;
 }
-#main .fitur {
-  margin: 60px 10px;
-}
-#main .card {
+
+.card {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-gap: 20px;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  #main .card {
+  .card {
     grid-template-columns: repeat(1, auto);
     grid-gap: 16px;
   }
 }
-#main .card p {
+.card p {
   font-size: 14px;
 }
-#main .fitur-card {
+
+.fitur-card {
   background: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.16);
 }
-#main .link-servis {
+.fitur-card .link-servis {
   margin: 40px auto 0px auto;
 }
-#main .link-servis a {
+.fitur-card .link-servis a {
   text-decoration: none;
 }
 
@@ -447,15 +462,16 @@ section {
 #header {
   color: white;
   text-align: center;
-  background-color: #292E33;
-  z-index: 1;
   overflow: hidden;
+  height: 100vh;
 }
 
 .bg-slide {
-  color: white;
-  z-index: -5;
+  width: 100%;
+  background-color: black;
+  color: black;
   height: 100vh;
+  z-index: -1;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .bg-slide {
@@ -467,7 +483,7 @@ section {
     max-height: 550px;
   }
 }
-.bg-slide:before {
+.bg-slide::after {
   position: absolute;
   content: "";
   top: 0;
@@ -475,15 +491,17 @@ section {
   right: 0;
   bottom: 0;
   background-color: #000;
-  opacity: 0.4;
-  z-index: -1;
+  opacity: 0.6;
+  z-index: 1;
 }
 
 #servis-header {
-  overflow: hidden;
   margin: 0;
-  height: 650px;
+  height: 100vh;
+  max-height: 750px;
   z-index: 1;
+  color: white;
+  overflow: hidden;
 }
 
 .bg-servis {
@@ -500,30 +518,27 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(302deg, #ffcb31 0%, #fc4332 100%);
+  background-color: #000;
   opacity: 0.75;
-  z-index: -2;
+  z-index: -4;
 }
 
-#servis-article {
-  margin: 120px 0;
-  color: white;
+.servis-article {
+  margin-top: 100px;
   width: 50%;
-  text-align: left;
   display: block;
 }
 
-.servis-intro {
-  top: 50%;
-}
 .servis-intro p {
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 100px;
 }
 
-.servis-scroll {
-  margin: 120px auto;
+.servis-button {
+  text-align: center;
+  display: inline-block;
+  margin-left: 0px;
 }
 
 .our-servis {
@@ -543,11 +558,10 @@ section {
 .list-servis {
   margin-top: 40px;
   display: flex;
-  color: white;
   justify-content: center;
 }
 .list-servis a {
-  color: #FFCB31;
+  color: #292E33;
   text-decoration: none;
   pointer-events: none;
   font-size: 16px;
@@ -557,7 +571,7 @@ section {
 }
 .list-servis li {
   line-height: 1.8;
-  margin: 0 0 0 16px;
+  margin-right: 16px;
   list-style-image: url("/asset/icon/icon-list.png");
 }
 
@@ -573,6 +587,64 @@ section {
   margin-right: 20px;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 840px) {
+  #servis-header {
+    height: 650px;
+  }
+
+  .servis-article {
+    margin-top: 100px;
+    width: 100%;
+    display: block;
+  }
+
+  .servis-intro p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .servis-button {
+    text-align: center;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .servis-article {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .servis-article {
+    margin-top: 100px;
+    width: 100%;
+    display: block;
+  }
+
+  .servis-intro p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .our-servis {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 564px) {
+  .list-servis {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+  .list-servis ul {
+    margin-bottom: 0;
+  }
+
+  .list-r, .list-l {
+    margin: 0;
+  }
+}
 #about {
   background: #F7F9FA;
   height: 750px;

@@ -1,19 +1,20 @@
 #header 
     color: white
     text-align: center
-    background-color: $black
-    z-index: 1
     overflow: hidden
+    height: 100vh
+    // background: $black
 
 .bg-slide
     // background-image: url('/asset/img/bg-slider2.jpg')
     // background-position: center
     // background-repeat: no-repeat
     // background-size: cover
-    // position: relative
-    color: white
-    z-index: -5
+    width: 100%
+    background-color: black
+    color: black
     height: 100vh
+    z-index: -1
 
     @media only screen and (min-width: 481px) and (max-width: 767px)
         max-height: 620px
@@ -21,7 +22,7 @@
     @media only screen and (min-width: 320px) and (max-width: 480px)
         max-height: 550px
 
-    &:before
+    &::after
         position: absolute
         content: ""
         top: 0
@@ -31,8 +32,8 @@
         background-color: #000
         // background-image: linear-gradient(0deg, rgba(255,226,0,1) 0%, rgba(58,115,179,1) 67%, rgba(0,40,170,1) 100%)
         // background-color: #ffe200
-        opacity: .4
-        z-index: -1
+        opacity: .6
+        z-index: 1
 
 
 //     background-color #20bf55;

@@ -1,7 +1,8 @@
 #article
     width: 70%
-    z-index: 1
     margin: 100px auto
+    color: white
+    z-index: 50
 
     h2 
         font-weight: 500
@@ -19,15 +20,20 @@
 
     .underlineSmall
             display: none
-    .label
-        display: inline-block
-        font-weight: 500
-        margin: 10px 0px
-        font-size: 14px
-        transition: all 0.2s ease
+    
+.label
+    display: inline-block
+    font-weight: 500
+    margin: 10px 0px
+    font-size: 14px
+    transition: all 0.2s ease
 
-        &:hover, &:active, &:focus
-            transform: translateY(2px)
+    &:hover, &:active, &:focus
+        transform: translateY(2px)
+
+a.label 
+    text-decoration: none
+
 
 .button
     font-weight: 500
@@ -53,9 +59,9 @@
     top: 95%
     right: 0
     left: 0
-    width : 18px
+    width: 18px
     height: 18px
-    z-index: -1
+    z-index: 1
 
 
 

@@ -10,6 +10,24 @@ window.sr = ScrollReveal({
     reset: false
 });
 
+/// slider
+
+$(".bg-slide").vegas({
+    delay: 8000,
+    transitionDuration: 1000,
+    shuffle: true,
+    slides: [
+        { src: "/asset/img/bg-slider1.jpg" },
+        { src: "/asset/img/bg-slider2.jpg" },
+        { src: "/asset/img/bg-slider3.jpg" },
+        { src: "/asset/img/bg-slider4.jpg" },
+        { src: "/asset/img/bg-slider5.jpg" },
+        { src: "/asset/img/bg-slider6.jpg" },
+    ],
+    transition: 'fade'
+});
+
+////
 
 /// scroll
 $('.go-scroll').on('click', function() {  
@@ -31,34 +49,47 @@ sr.reveal('#about',{
     opacity: 0,
 });
 
+
+sr.reveal('.servis-article',{
+    duration:600,
+    delay:800,
+    scale: 0.8,
+});
+
+sr.reveal('#main-servis-id',{
+    duration:1000,
+    delay:1000,
+    scale: 0.8,
+});
+
 sr.reveal('#main-fitur, .whatwedo',{
     duration:1000,
     delay:1000,
     opacity: 0,
 });
 
-sr.reveal('#main-fitur .data',{
+sr.reveal('.data',{
     origin: 'left',
     duration:400,
     delay:800,
     scale: 0.5,
 });
 
-sr.reveal('#main-fitur .app',{
+sr.reveal('.app',{
     origin: 'right',
     duration:400,
     delay:1000,
     scale: 0.5,
 });
 
-sr.reveal('#main-fitur .ent',{
+sr.reveal('.ent',{
     origin: 'left',
     duration:400,
     delay:1200,
     scale: 0.5,
 });
 
-sr.reveal('#main-fitur .cloud',{
+sr.reveal('.cloud',{
     origin: 'right',
     duration:400,
     delay:1400,
@@ -69,10 +100,12 @@ sr.reveal('#partner',{
     duration:400,
     delay:800,
 });
+
 sr.reveal('#partner img',{
     duration:600,
     origin:'buttom',
     delay:800,
     scale: 0.8,
 });
+
 

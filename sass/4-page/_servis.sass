@@ -1,8 +1,10 @@
 #servis-header
-    overflow: hidden
     margin: 0
-    height: 650px
+    height: 100vh
+    max-height: 750px
     z-index: 1
+    color: white
+    overflow: hidden
     
 .bg-servis
     background-image: url('/asset/img/bg-slider3.jpg')
@@ -17,29 +19,42 @@
         left: 0
         right: 0
         bottom: 0
-        background-image: linear-gradient(302deg, rgba(255,203,49,1) 0%, rgba(252,67,50,1) 100%)
+        background-color: #000
         opacity: 0.75
-        z-index: -2
+        z-index: -4
 
-// Main Servis
-
-#servis-article
-    margin: 120px 0
-    color: white
+.servis-article
+    margin-top: 100px
     width: 50%
-    text-align: left
     display: block
 
 .servis-intro
-    top: 50%
-    p 
+    p
+        font-weight: 300
         font-size: 18px
         line-height: 1.6
-        margin-bottom: 100px
+
+.servis-button
+    text-align: center
+    display: inline-block
+    margin-left: 0px
 
 
-.servis-scroll
-    margin: 120px auto
+// .servis-article
+//     margin: 100px 0
+//     color: white
+//     width: 50%
+//     text-align: left
+
+
+// .servis-intro
+//     top: 50%
+//     p 
+//         font-size: 18px
+//         line-height: 1.6
+//         margin-bottom: 100px
+
+// main servis
 
 .our-servis
     width: 70%
@@ -57,11 +72,10 @@
 .list-servis
     margin-top: 40px
     display: flex
-    color: white
     justify-content: center
 
     a
-        color: $yellow
+        color: $black
         text-decoration: none
         pointer-events: none
         font-size: 16px
@@ -71,7 +85,7 @@
 
     li 
         line-height: 1.8
-        margin: 0 0 0 16px
+        margin-right: 16px
         list-style-image: url('/asset/icon/icon-list.png')
 
 
@@ -83,43 +97,53 @@
 .list-l
     margin-right: 20px
 
-//  Servis Card
-//     text-align: center
-    // background-image: url('/asset/img/bg-ornament.png')
-    // background-size: cover
+/////
 
+@media only screen and (min-width: 481px) and (max-width: 840px)
+    #servis-header
+        height: 650px
 
+    .servis-article
+        margin-top: 100px
+        width: 100%
+        display: block
 
-    // only screen and (max-width: 750px)
-    //     height: 700px
+    .servis-intro
+        p
+            font-weight: 300
+            font-size: 18px
+            line-height: 1.6
 
-    //  only screen and (max-width: 680px)
-    //     height: 900px
+    .servis-button
+        text-align: center
+        display: inline-block
 
+@media only screen and (max-width: 780px)
+    .servis-article
+        text-align: center
 
-// .servis-fitur
-//     margin: 60px
-//     img 
-//         height: 24px
+@media only screen and (min-width: 320px) and (max-width: 480px)
+    .servis-article
+        margin-top: 100px
+        width: 100%
+        display: block
 
-// .card-servis
-//     display: grid
-//     grid-template-columns: repeat(2, auto)
-//     grid-gap: 20px
+    .servis-intro
+        p
+            font-weight: 300
+            font-size: 16px
+            line-height: 1.6
 
-//    only screen and (max-width: 680px)
-//         grid-template-columns: repeat(1, auto)
-//         grid-gap: 16px
+@media only screen and (min-width: 481px) and (max-width: 767px)
+    .our-servis
+        width: 100%
 
-//     p
-//         margin: 16px
-//         font-size: 12px
+@media only screen and (min-width: 320px) and (max-width: 564px)
+    .list-servis
+        display: grid
+        grid-template-columns: repeat(1, auto)
 
-//     img 
-//         height: 64px
-
-// .cardServis
-//     background: white
-//     padding: 30px
-//     border-radius: 8px
-//     box-shadow: 0 5px 20px 0px rgba(0,0,0, 0.16)
+        ul 
+            margin-bottom: 0
+    .list-r, .list-l
+        margin: 0
