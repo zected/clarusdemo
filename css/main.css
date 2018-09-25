@@ -468,8 +468,7 @@ a.label {
 
 .bg-slide {
   width: 100%;
-  background-color: black;
-  color: black;
+  position: absolute;
   height: 100vh;
   z-index: -1;
 }
