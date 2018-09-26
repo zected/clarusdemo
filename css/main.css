@@ -93,7 +93,6 @@ body a:visited {
 
 .wrapper {
   width: 85%;
-  max-width: 1100px;
   margin: auto;
   z-index: 100;
 }
@@ -566,9 +565,8 @@ a.label {
 }
 
 .footbot {
-  margin: auto;
+  margin-top: 60px;
   color: #13212E;
-  position: fixed;
   bottom: 0%;
 }
 .footbot p {
@@ -582,6 +580,7 @@ a.label {
     height: 450px;
   }
   #footer .footbot {
+    margin-top: 40px;
     text-align: center;
   }
 }
