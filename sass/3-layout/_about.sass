@@ -1,27 +1,79 @@
-#introabout
-    background: $grey
-    text-decoration: none
-.intro-about
-    margin: auto
-    padding: 20px
+#about
+    height: 850px
     text-align: center
 
-    h3 
+.main-about
+    margin-top: 40px
+
+.content-about
+    margin: 40px
+    display: flex
+    align-items: center
+    height: 100%
+
+.about-l
+    text-align: left
+    p
         font-weight: 300
-        line-height: 1.6
-        letter-spacing: 1px
-        font-style: italic
+        line-height: 1.8
 
-#mainabout 
-    text-align: center
+.about-r
+    max-width: 500px
+    width: 100%
+    height: auto
+    border-image: 2px
 
-    p.main-about
-            margin-top: 50px
-            width: 50%
-            font-size: 18px
-            line-height: 1.6
-            text-align: left
+.about-l, .about-r
+    display: block
+    padding: 20px
 
-    p.vision-about
-        font-size: 20px
+.vision
+    p 
+        font-size: 18px
         margin-bottom: 40px
+
+.vision-btn
+    margin-top: 80px
+
+
+@media only screen and (min-width: 320px) and (max-width: 1000px)
+    #about
+        height: 1100px
+        text-align: center
+    .content-about
+        display: block
+        margin: 0
+    .about-r, .about-l
+        padding: 0
+    .about-r
+        display: inline !important
+
+    
+    
+// #introabout
+//     background: $grey
+//     text-decoration: none
+// .intro-about
+//     margin: auto
+//     padding: 20px
+//     text-align: center
+
+//     h3 
+//         font-weight: 300
+//         line-height: 1.6
+//         letter-spacing: 1px
+//         font-style: italic
+
+// #mainabout 
+//     text-align: center
+
+//     p.main-about
+//             margin-top: 50px
+//             width: 50%
+//             font-size: 18px
+//             line-height: 1.6
+//             text-align: left
+
+//     p.vision-about
+//         font-size: 20px
+//         margin-bottom: 40px
