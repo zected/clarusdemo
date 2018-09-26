@@ -44,26 +44,26 @@ sr.reveal('#article',{
 });
 
 sr.reveal('#about',{
-    duration:1000,
+    duration:500,
     delay:1000,
     opacity: 0,
 });
 
 
 sr.reveal('.servis-article',{
-    duration:600,
+    duration:500,
     delay:800,
     scale: 0.8,
 });
 
 sr.reveal('#main-servis-id',{
-    duration:1000,
+    duration:500,
     delay:1000,
     scale: 0.8,
 });
 
 sr.reveal('#main-fitur, .whatwedo',{
-    duration:1000,
+    duration:500,
     delay:1000,
     opacity: 0,
 });
@@ -78,33 +78,33 @@ sr.reveal('.data',{
 sr.reveal('.app',{
     origin: 'right',
     duration:400,
-    delay:1000,
+    delay:900,
     scale: 0.5,
 });
 
 sr.reveal('.ent',{
     origin: 'left',
     duration:400,
-    delay:1200,
+    delay:1000,
     scale: 0.5,
 });
 
 sr.reveal('.cloud',{
     origin: 'right',
     duration:400,
-    delay:1400,
+    delay:1100,
     scale: 0.5,
 });
 
 sr.reveal('#partner',{
     duration:400,
-    delay:800,
+    delay:600,
 });
 
 sr.reveal('#partner img',{
     duration:600,
     origin:'buttom',
-    delay:800,
+    delay:600,
     scale: 0.8,
 });
 

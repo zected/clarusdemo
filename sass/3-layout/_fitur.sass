@@ -1,26 +1,18 @@
 #main
-    // background-image: url('/asset/img/bg-ornament.png')
-    // background-size: cover
     height: 1250px
-    background: $grey
+    background: #2F4858
     text-align: center
-
-    @media only screen and (min-width: 481px) and (max-width: 767px)
-        height: 1550px
-
-    @media only screen and (min-width: 370px) and (max-width: 480px)
-        height: 2120px
-
-    @media only screen and (min-width: 320px) and (max-width: 369px)
-        height: 2220px
+    color: white
 
 
     h3 
         margin-top: 80px
         margin-bottom: 0px
+
     p 
         font-size: 18px
         margin: 16px
+
 
 .list-servis
     margin-top: 40px
@@ -46,29 +38,27 @@
 .list-r, .list-l
     display: block
 
-// .list-r
-//     margin-left: 20px
-// .list-l
-//     margin-right: 20px
+.list-r
+    margin-left: 20px
+.list-l
+    margin-right: 20px
 
 .fitur
     margin: 80px 10px
     text-align: center
+    color: $black
     p
         font-size: 14px !important 
     img 
         height: 64px
 
 
+    
 .card
     display: grid
     grid-template-columns: repeat(2, auto)
     grid-gap: 20px
-
-    @media only screen and (min-width: 320px) and (max-width: 767px)
-        grid-template-columns: repeat(1, auto)
-        grid-gap: 16px
-
+    transition: transform .2s
     p
         font-size: 14px
 
@@ -77,16 +67,35 @@
     padding: 30px
     border-radius: 8px
     box-shadow: 0 5px 20px 0px rgba(0,0,0, 0.16)
+
     
     .link-servis
         margin: 80px auto 0px auto
         a 
             text-decoration: none
 
+
     // .underlineSmall
     //     background-color: $blue !important
 
-@media only screen and (min-width: 320px) and (max-width: 676px)
+@media only screen and (min-width: 481px) and (max-width: 767px)
+    #main
+        height: 1550px
+
+@media only screen and (min-width: 370px) and (max-width: 480px)
+    #main
+        height: 2120px
+
+@media only screen and (min-width: 320px) and (max-width: 369px)
+    #main
+        height: 2220px
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+    .card
+        grid-template-columns: repeat(1, auto)
+        grid-gap: 16px
+
+@media only screen and (min-width: 320px) and (max-width: 736px)
     .list-servis
         display: grid
         grid-template-columns: repeat(1, auto)
