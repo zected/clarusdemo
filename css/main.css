@@ -357,7 +357,7 @@ a.label {
 }
 #main {
   height: 1250px;
-  background: #2F4858;
+  background: #293C4F;
   text-align: center;
   color: white;
 }
@@ -377,7 +377,7 @@ a.label {
   text-align: left !important;
 }
 .list-servis a {
-  color: #13212E;
+  color: white;
   text-decoration: none;
   pointer-events: none;
   font-size: 16px;
@@ -386,21 +386,14 @@ a.label {
   padding: 0;
 }
 .list-servis li {
-  line-height: 1.8;
-  margin-right: 16px;
+  line-height: 2;
+  padding-left: 10px;
   list-style-image: url("/asset/icon/icon-list.png");
 }
 
 .list-r, .list-l {
   display: block;
-}
-
-.list-r {
-  margin-left: 20px;
-}
-
-.list-l {
-  margin-right: 20px;
+  margin: 2em;
 }
 
 .fitur {
@@ -428,8 +421,7 @@ a.label {
 .fitur-card {
   background: white;
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.16);
+  border: 2px solid #FFCB31;
 }
 .fitur-card .link-servis {
   margin: 80px auto 0px auto;
@@ -513,7 +505,7 @@ a.label {
 
 #map {
   height: 450px;
-  background: #2F4858;
+  background: #293C4F;
   color: white;
 }
 
@@ -531,6 +523,15 @@ a.label {
 }
 #footer {
   height: 350px;
+  background: #293C4F;
+  color: white !important;
+}
+#footer a {
+  text-decoration: none;
+  color: #DEE4EA !important;
+}
+#footer a:hover {
+  text-decoration: underline;
 }
 #footer h4 {
   margin-top: 0px;
@@ -560,13 +561,8 @@ a.label {
   padding: 0px 15px 15px 15px;
 }
 
-.link-map {
-  color: #0070C6 !important;
-}
-
 .footbot {
   margin-top: 60px;
-  color: #13212E;
   bottom: 0%;
 }
 .footbot p {

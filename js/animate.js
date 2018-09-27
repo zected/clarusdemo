@@ -17,12 +17,12 @@ $(".bg-slide").vegas({
     transitionDuration: 1000,
     shuffle: true,
     slides: [
-        { src: "/asset/img/bg-slider1.jpg" },
-        { src: "/asset/img/bg-slider2.jpg" },
-        { src: "/asset/img/bg-slider3.jpg" },
-        { src: "/asset/img/bg-slider4.jpg" },
-        { src: "/asset/img/bg-slider5.jpg" },
-        { src: "/asset/img/bg-slider6.jpg" },
+        { src: "http://clarus-it.co.id/v3/asset/img/bg-slider1.jpg" },
+        { src: "http://clarus-it.co.id/v3/asset/img/bg-slider2.jpg" },
+        { src: "http://clarus-it.co.id/v3/asset/img/bg-slider3.jpg" },
+        { src: "http://clarus-it.co.id/v3/asset/img/bg-slider4.jpg" },
+        { src: "http://clarus-it.co.id/v3/asset/img/bg-slider5.jpg" },
+        { src: "http://clarus-it.co.id/v3/asset/img/bg-slider6.jpg" },
     ],
     transition: 'fade'
 });
