@@ -505,8 +505,8 @@ a.label {
 
 #map {
   height: 450px;
-  background: #293C4F;
   color: white;
+  overflow: hidden;
 }
 
 .map-canvas {
@@ -570,6 +570,9 @@ a.label {
 }
 
 @media only screen and (max-width: 650px) {
+  #footer {
+    height: 600px;
+  }
   #footer .footer-tank {
     text-align: center;
     display: block;
@@ -614,6 +617,132 @@ a.label {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .bg-slide {
     height: 520px !important;
+  }
+}
+#navbar a {
+  color: #13212E;
+}
+
+#about-content {
+  height: calc(100vh - 10em);
+  text-align: center;
+  overflow: hidden;
+  background: #FFCB31;
+}
+
+.about-intro {
+  margin: 12em auto;
+}
+.about-intro h3 {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 40px auto;
+}
+.about-intro p {
+  margin: auto;
+  font-weight: 300 !important;
+  font-size: 32px;
+}
+
+#servis-header {
+  margin: 0;
+  height: 100vh;
+  max-height: 750px;
+  z-index: 1;
+  color: white;
+  overflow: hidden;
+}
+
+.bg-servis {
+  background-image: url("/asset/img/bg-slider2.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: -5;
+}
+.bg-servis:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: -4;
+}
+
+.servis-article {
+  margin-top: 100px;
+  width: 50%;
+  display: block;
+}
+.servis-article h2 {
+  margin-bottom: 0;
+}
+.servis-article p {
+  font-weight: 300;
+  font-size: 18px !important;
+  line-height: 1.8;
+}
+
+.servis-button {
+  text-align: center;
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.our-servis {
+  margin: 80px auto 40px auto;
+}
+.our-servis h3 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.our-servis p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 840px) {
+  #servis-header .servis-article {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #servis-header {
+    height: 550px;
+  }
+
+  .servis-article {
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .servis-intro p {
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  .servis-button {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .our-servis {
+    text-align: center;
+  }
+
+  .list-servis {
+    margin: auto;
   }
 }
 
