@@ -18,8 +18,10 @@ $(".bg-slide").vegas({
     shuffle: true,
     slides: [
         { src: "asset/img/bg-slider1.jpg" },
+        { src: "asset/img/bg-clarus1.jpg" },
         { src: "asset/img/bg-slider2.jpg" },
         { src: "asset/img/bg-slider3.jpg" },
+        { src: "asset/img/bg-clarus2.jpg" },
         { src: "asset/img/bg-slider4.jpg" },
         { src: "asset/img/bg-slider5.jpg" },
         { src: "asset/img/bg-slider6.jpg" },
@@ -106,6 +108,42 @@ sr.reveal('#partner img',{
     origin:'buttom',
     delay:600,
     scale: 0.8,
+});
+
+
+sr.reveal('.about-intro',{
+    duration: 1200,
+    origin:'buttom',
+    delay:400,
+});
+
+sr.reveal('#vision',{
+    duration: 1500,
+    delay:400,
+});
+
+sr.reveal('#mision',{
+    duration: 1500,
+    origin:'left',
+    delay:400,
+    
+});
+
+sr.reveal('#our-value',{
+    duration: 1500,
+    origin:'bottom',
+    delay:400,
+    
+});
+
+sr.reveal('.contact-intro',{
+    duration: 1000,
+    origin: 'left',
+    delay:400,
+});
+sr.reveal('#contact-detail',{
+    duration: 1000,
+    delay:400,
 });
 
 
