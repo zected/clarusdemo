@@ -81,6 +81,8 @@
         font-size: 18px
         font-weight: 300
         letter-spacing: 2px
+        margin-top: 0
+        margin-bottom: 2em
 
     .visi
         font-size: 24px !important
@@ -88,7 +90,7 @@
 
 
 #mision
-    height: 300px
+    height: 320px
     text-align: center
     display: flex
     justify-content: center
@@ -100,6 +102,8 @@
         font-size: 18px
         font-weight: 300
         letter-spacing: 2px
+        margin-top: 0
+        margin-bottom: 2em
 
     .mision
         font-size: 24px
@@ -114,7 +118,9 @@
 #our-value
     background: $light
     color: $grey
-    height: 300px
+    height: 420px
+    display: flex
+    justify-content: center
 
     h3 
         margin-top: 40px
@@ -123,6 +129,8 @@
         font-weight: 300
         letter-spacing: 2px
         text-align: center
+        margin-top: 0
+        margin-bottom: 2em
 
     .nilai
         display: flex
@@ -136,15 +144,34 @@
             padding-left: 24px
             list-style-image: url('/asset/icon/icon-list.png')
 
-        
+// Media Query
 
-    //     h3 
-    //         text-align: center
-    //         font-size: 18px
-    //         font-weight: 300
-    //         letter-spacing: 2px
+@media only screen and (min-width: 768px) and (max-width: 1441px)
+    #intro-about 
+        max-height: 720px
 
-    //     ul
-    //         list-style: none
-    //         text-align: left !important
-        
+@media only screen and (min-width: 480px) and (max-width: 767px)
+    #vision
+        height: 320px
+    #mision
+        height: 350px
+    #our-value
+        height: 680px
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+    #navbar 
+        background: $grey
+
+    #content-about
+        height: 800px
+        text-align: center
+
+    #our-value
+        height: 400px
+        li 
+            line-height: 1.6
+            font-size: 16px
+    
+    .about-intro
+        p
+            font-size: 22px

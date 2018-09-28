@@ -692,13 +692,15 @@ a.label {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 #vision .visi {
   font-size: 24px !important;
 }
 
 #mision {
-  height: 300px;
+  height: 320px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -709,6 +711,8 @@ a.label {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 #mision .mision {
   font-size: 24px;
@@ -725,7 +729,9 @@ a.label {
 #our-value {
   background: #F2F2F2;
   color: #293C4F;
-  height: 300px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
 }
 #our-value h3 {
   margin-top: 40px;
@@ -734,6 +740,8 @@ a.label {
   font-weight: 300;
   letter-spacing: 2px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 #our-value .nilai {
   display: flex;
@@ -748,6 +756,46 @@ a.label {
   list-style-image: url("/asset/icon/icon-list.png");
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1441px) {
+  #intro-about {
+    max-height: 720px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #vision {
+    height: 320px;
+  }
+
+  #mision {
+    height: 350px;
+  }
+
+  #our-value {
+    height: 680px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #navbar {
+    background: #293C4F;
+  }
+
+  #content-about {
+    height: 800px;
+    text-align: center;
+  }
+
+  #our-value {
+    height: 400px;
+  }
+  #our-value li {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .about-intro p {
+    font-size: 22px;
+  }
+}
 #servis-header {
   margin: 0;
   height: 100vh;
