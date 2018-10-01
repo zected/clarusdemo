@@ -1,9 +1,9 @@
-
 #header 
     color: white
     text-align: center
     overflow: hidden
     height: 100vh
+    // max-height: 800px
     // max-height: 800px
     // background: $black
 
@@ -14,7 +14,7 @@
     // background-size: cover
     width: 100%
     position: absolute 
-    height: 100vh !important
+    height: 100vh
     z-index: -1
  
 
@@ -37,9 +37,13 @@
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px)
-    .bg-slide
-        height: 620px !important
+    #header
+        height: 480px
+    // .bg-slide
+    //     height: 620px !important
 
 @media only screen and (min-width: 320px) and (max-width: 480px)
-    .bg-slide
-        height: 520px !important
+    #header
+        height: 620px
+    // .bg-slide
+    //     height: 520px !important

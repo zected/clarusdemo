@@ -6,14 +6,14 @@ function toggleNavDisplay(e){
     
     navButton.addEventListener("click",toggleNavDisplay);
 
-window.sr = ScrollReveal({
-    reset: false
-});
+
+    // window.sr = ScrollReveal({ reset: false });
+    
 
 /// slider
 
 $(".bg-slide").vegas({
-    delay: 8000,
+    delay: 6000,
     transitionDuration: 1000,
     shuffle: true,
     slides: [
@@ -38,6 +38,15 @@ $('.go-scroll').on('click', function() {
 });
 
 ////
+
+window.sr = ScrollReveal({ 
+    reset: false 
+});
+
+
+sr.reveal('.partner-card', { 
+    duration: 2000 
+}, 50);
 
 sr.reveal('#article',{
     duration:400,
@@ -73,14 +82,14 @@ sr.reveal('#main-fitur, .whatwedo',{
 sr.reveal('.data',{
     origin: 'left',
     duration:400,
-    delay:800,
+    delay:1000,
     scale: 0.5,
 });
 
 sr.reveal('.app',{
     origin: 'right',
     duration:400,
-    delay:900,
+    delay:1000,
     scale: 0.5,
 });
 
@@ -94,7 +103,7 @@ sr.reveal('.ent',{
 sr.reveal('.cloud',{
     origin: 'right',
     duration:400,
-    delay:1100,
+    delay:1000,
     scale: 0.5,
 });
 
@@ -141,9 +150,11 @@ sr.reveal('.contact-intro',{
     origin: 'left',
     delay:400,
 });
+
 sr.reveal('#contact-detail',{
     duration: 1000,
     delay:400,
 });
+
 
 
