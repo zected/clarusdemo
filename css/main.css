@@ -495,6 +495,12 @@ a.label {
 }
 #partner img {
   width: 80%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+#partner img:hover {
+  filter: none;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #partner img {
@@ -918,6 +924,12 @@ a.label {
 }
 .main-partner img {
   width: 90%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+}
+.main-partner img:hover {
+  filter: none;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 736px) {
