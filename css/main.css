@@ -67,6 +67,8 @@ p {
 }
 
 a {
+  color: inherit;
+  text-decoration: none !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -118,7 +120,6 @@ section {
 
 .button-primary {
   font-weight: 500;
-  color: #FFCB31 !important;
   text-decoration: none;
   border: 2px solid #FFCB31;
   display: block;
@@ -154,6 +155,20 @@ section {
   transform: translateY(2px);
 }
 
+.button-nav {
+  text-decoration: none;
+  color: white !important;
+  background: #FFCB31;
+  display: block;
+  padding: 15px 15px;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+.button-nav:hover, .button-nav:active {
+  background: #FFBC00;
+  transform: translateY(2px);
+}
+
 .main-nav {
   display: flex;
   margin-top: 20px;
@@ -179,8 +194,11 @@ section {
   transition: all 0.2s ease;
 }
 .main-nav a:hover, .main-nav a:active {
-  text-decoration: underline;
   transform: translateY(1px);
+}
+.main-nav a.button {
+  background: #FFCB31;
+  color: white;
 }
 .main-nav .responsive-nav {
   padding-top: 14px;
@@ -253,6 +271,9 @@ section {
     padding: 28px;
     display: block;
     text-align: center;
+  }
+  .responsive-nav.showNav a.download {
+    background: inherit;
   }
 }
 #article {
@@ -396,13 +417,13 @@ a.label {
 }
 #main {
   height: 1000px;
-  background: #2C3E50;
   text-align: center;
-  color: white;
+}
+#main a {
+  color: #34495e;
 }
 #main h3 {
-  color: white;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 0px;
 }
 #main p {
@@ -435,13 +456,8 @@ a.label {
 .fitur-card {
   background: white;
   padding: 30px;
-  border: 2px solid #FFCB31;
-}
-.fitur-card .link-servis {
-  margin: 80px auto 0px auto;
-}
-.fitur-card .link-servis a {
-  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0px 10px 40px -5px rgba(0, 64, 128, 0.2);
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -502,9 +518,9 @@ a.label {
 #partner img:hover {
   filter: none;
 }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 680px) {
   #partner img {
-    width: 90%;
+    filter: none;
   }
 }
 
@@ -532,6 +548,7 @@ a.label {
   color: white !important;
 }
 #footer a {
+  font-weight: 500;
   text-decoration: none;
   color: #FFCB31 !important;
 }

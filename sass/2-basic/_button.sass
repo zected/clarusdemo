@@ -1,6 +1,6 @@
 .button-primary
     font-weight: 500
-    color: $yellow !important
+    // color: $yellow !important
     text-decoration: none
     border: 2px solid $yellow
     display: block
@@ -27,9 +27,24 @@
     margin: auto
     padding: 15px 30px
     border-radius: 100px
+    // box-shadow: 0px 4px 40px 0px rgba(255,203,49, 0.8) 
     transition: all 0.2s ease
-
+    
     &:hover, &:active
         background: $yellows
         color: white !important
+        transform: translateY(2px)
+
+.button-nav
+    text-decoration: none
+    color: white !important
+    background: $yellow
+    display: block
+    padding: 15px 15px
+    border-radius: 100px
+    // box-shadow: 0px 4px 40px 0px rgba(255,203,49, 0.8) 
+    transition: all 0.2s ease
+    
+    &:hover, &:active
+        background: $yellows
         transform: translateY(2px)

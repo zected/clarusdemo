@@ -13,7 +13,7 @@ function toggleNavDisplay(e){
 /// slider
 
 $(".bg-slide").vegas({
-    delay: 6000,
+    delay: 5000,
     transitionDuration: 1000,
     shuffle: true,
     slides: [
@@ -40,13 +40,13 @@ $('.go-scroll').on('click', function() {
 ////
 
 window.sr = ScrollReveal({ 
-    reset: false 
+    reset: false
 });
 
 
 sr.reveal('.partner-card', { 
-    duration: 2000 
-}, 50);
+    interval: 100 
+});
 
 sr.reveal('#article',{
     duration:400,
