@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
 .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .huge, h1 {
   font-size: 56px;
   line-height: 1.05;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
 }
 @media only screen and (max-width: 680px) {
   .huge, h1 {
@@ -29,9 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bigger, h3 {
+  color: #FFCB31;
   font-size: 28px;
   line-height: 1.38;
-  font-weight: 800;
+  font-weight: 500;
 }
 @media only screen and (max-width: 680px) {
   .bigger, h3 {
@@ -60,7 +62,7 @@ h4 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 1.38;
 }
 
@@ -69,11 +71,11 @@ a {
 }
 
 ul {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 li {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -89,7 +91,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #13212E;
+  color: #34495e;
   font-size: 14px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -170,17 +172,21 @@ section {
 }
 .main-nav a {
   color: white !important;
+  font-weight: 500;
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 .main-nav a:hover, .main-nav a:active {
-  font-weight: 500;
-  transform: translateY(2px);
+  text-decoration: underline;
+  transform: translateY(1px);
 }
 .main-nav .responsive-nav {
   padding-top: 14px;
+}
+.main-nav .responsive-nav a {
+  margin: 10px;
 }
 .main-nav .toggle-button {
   display: none;
@@ -344,8 +350,8 @@ a.label {
   text-align: left;
 }
 .about-l p {
-  font-weight: 300;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .about-r {
@@ -390,11 +396,12 @@ a.label {
 }
 #main {
   height: 1000px;
-  background: #293C4F;
+  background: #2C3E50;
   text-align: center;
   color: white;
 }
 #main h3 {
+  color: white;
   margin-top: 80px;
   margin-bottom: 0px;
 }
@@ -406,7 +413,7 @@ a.label {
 .fitur {
   margin: 80px 10px;
   text-align: center;
-  color: #13212E;
+  color: #34495e;
 }
 .fitur p {
   font-size: 14px !important;
@@ -464,10 +471,12 @@ a.label {
   display: flex;
   text-align: center;
   justify-items: center;
-  background: #F2F2F2;
+  background: #f6f6f6;
 }
 #partner h3 {
+  color: #34495e !important;
   margin-top: 0;
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 481px) and (max-width: 680px) {
   #partner {
@@ -513,7 +522,7 @@ a.label {
 }
 #footer {
   height: 350px;
-  background: #293C4F;
+  background: #2C3E50;
   color: white !important;
 }
 #footer a {
@@ -593,8 +602,7 @@ a.label {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000;
-  opacity: 0.6;
+  background: linear-gradient(180deg, rgba(0, 12, 17, 0.99) 10%, rgba(0, 0, 0, 0.5) 100%);
   overflow: hidden;
   z-index: 1;
 }
@@ -618,7 +626,7 @@ a.label {
   }
 }
 #navbar {
-  background: #293C4F;
+  background: #2C3E50;
 }
 
 #intro-about {
@@ -639,7 +647,7 @@ a.label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #293C4F;
+  background: #2C3E50;
   opacity: 0.6;
   overflow: hidden;
   z-index: -2;
@@ -672,8 +680,8 @@ a.label {
 #vision {
   height: 300px;
   text-align: center;
-  background: #F2F2F2;
-  color: #293C4F;
+  background: #f6f6f6;
+  color: #2C3E50;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -718,8 +726,8 @@ a.label {
 }
 
 #our-value {
-  background: #F2F2F2;
-  color: #293C4F;
+  background: #f6f6f6;
+  color: #2C3E50;
   height: 420px;
   display: flex;
   justify-content: center;
@@ -767,7 +775,7 @@ a.label {
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   #navbar {
-    background: #293C4F;
+    background: #2C3E50;
   }
 
   #about-content {
@@ -840,7 +848,7 @@ a.label {
   margin: 80px auto 40px auto;
 }
 .our-servis a {
-  color: #13212E !important;
+  color: #34495e !important;
 }
 .our-servis h3 {
   text-transform: uppercase;
@@ -938,7 +946,7 @@ a.label {
 }
 #contact-head {
   height: 280px;
-  background: #293C4F;
+  background: #2C3E50;
 }
 #contact-head .contact-intro {
   margin-left: 10px;
