@@ -194,11 +194,8 @@ section {
   transition: all 0.2s ease;
 }
 .main-nav a:hover, .main-nav a:active {
+  color: #FFCB31 !important;
   transform: translateY(1px);
-}
-.main-nav a.button {
-  background: #FFCB31;
-  color: white;
 }
 .main-nav .responsive-nav {
   padding-top: 14px;
@@ -271,9 +268,6 @@ section {
     padding: 28px;
     display: block;
     text-align: center;
-  }
-  .responsive-nav.showNav a.download {
-    background: inherit;
   }
 }
 #article {
@@ -960,6 +954,9 @@ a.label {
     grid-gap: 30px;
     grid-auto-rows: 80px;
   }
+  .main-partner img {
+    filter: none;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   #partner-main {
@@ -971,6 +968,9 @@ a.label {
     grid-template-columns: repeat(2, auto);
     grid-gap: 20px;
     grid-auto-rows: 80px;
+  }
+  .main-partner img {
+    filter: none;
   }
 }
 #contact-head {
