@@ -1,8 +1,9 @@
 #header 
     color: white
     text-align: center
-    overflow: hidden
     height: 100vh
+    position: relative
+    overflow: hidden
     // max-height: 800px
     // max-height: 800px
     // background: $black
@@ -32,8 +33,18 @@
         overflow: hidden
         z-index: 1
 
-//     background-color #20bf55;
-// background-image linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+.scroll-downs
+    position: absolute
+    left: 50%
+    bottom: 5%
+    transition: all 0.2s ease
+
+    img  
+        width: 18px
+        height: 18px
+
+    &:hover, &:active, &:focus
+        transform: translateY(2px)
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px)

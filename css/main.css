@@ -287,9 +287,6 @@ section {
   text-decoration: none;
   color: white;
 }
-#article .underlineSmall {
-  display: none;
-}
 
 .label {
   display: inline-block;
@@ -304,17 +301,6 @@ section {
 
 a.label {
   text-decoration: none;
-}
-
-.scroll-downs {
-  margin: 100px auto 0 auto;
-  width: 18px;
-  height: 18px;
-  z-index: 10;
-  transition: all 0.2s ease;
-}
-.scroll-downs:hover, .scroll-downs:active, .scroll-downs:focus {
-  transform: translateY(2px);
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -601,8 +587,9 @@ a.label {
 #header {
   color: white;
   text-align: center;
-  overflow: hidden;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .bg-slide {
@@ -621,6 +608,20 @@ a.label {
   background: linear-gradient(180deg, rgba(0, 12, 17, 0.99) 10%, rgba(0, 0, 0, 0.5) 100%);
   overflow: hidden;
   z-index: 1;
+}
+
+.scroll-downs {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transition: all 0.2s ease;
+}
+.scroll-downs img {
+  width: 18px;
+  height: 18px;
+}
+.scroll-downs:hover, .scroll-downs:active, .scroll-downs:focus {
+  transform: translateY(2px);
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -652,9 +653,9 @@ a.label {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  z-index: -100;
   position: relative;
   display: flex;
+  z-index: -1;
 }
 #intro-about::before {
   position: absolute;
@@ -666,7 +667,7 @@ a.label {
   background: #2C3E50;
   opacity: 0.6;
   overflow: hidden;
-  z-index: -2;
+  z-index: -1;
 }
 
 .about-intro {
@@ -934,12 +935,7 @@ a.label {
 }
 .main-partner img {
   width: 90%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   transition: all 0.2s ease;
-}
-.main-partner img:hover {
-  filter: none;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 736px) {
