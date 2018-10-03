@@ -79,33 +79,39 @@ sr.reveal('#main-fitur, .whatwedo',{
     opacity: 0,
 });
 
-sr.reveal('.data',{
-    origin: 'left',
-    duration:400,
-    delay:1000,
-    scale: 0.5,
+sr.reveal('.fitur-card',{
+    duration: 1000,
+    delay: 1800,
+    interval: 350,
 });
 
-sr.reveal('.app',{
-    origin: 'right',
-    duration:400,
-    delay:1000,
-    scale: 0.5,
-});
+// sr.reveal('.data',{
+//     origin: 'left',
+//     duration:400,
+//     delay:1000,
+//     scale: 0.5,
+// });
 
-sr.reveal('.ent',{
-    origin: 'left',
-    duration:400,
-    delay:1000,
-    scale: 0.5,
-});
+// sr.reveal('.app',{
+//     origin: 'right',
+//     duration:400,
+//     delay:1000,
+//     scale: 0.5,
+// });
 
-sr.reveal('.cloud',{
-    origin: 'right',
-    duration:400,
-    delay:1000,
-    scale: 0.5,
-});
+// sr.reveal('.ent',{
+//     origin: 'left',
+//     duration:400,
+//     delay:1000,
+//     scale: 0.5,
+// });
+
+// sr.reveal('.cloud',{
+//     origin: 'right',
+//     duration:400,
+//     delay:1000,
+//     scale: 0.5,
+// });
 
 sr.reveal('#partner',{
     duration:400,
