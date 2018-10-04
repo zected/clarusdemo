@@ -970,7 +970,8 @@ a.label {
 }
 #contact-head {
   height: 250px;
-  background: #2C3E50;
+  background: #2c3e50;
+  background: linear-gradient(180deg, #2c3e50 0%, #2c3e50 90%, rgba(44, 62, 80, 0.9) 100%);
 }
 #contact-head .contact-intro {
   margin-left: 10px;
@@ -986,7 +987,7 @@ a.label {
 }
 
 #contact-map {
-  height: 460px;
+  height: 450px;
   display: block;
   position: relative;
 }
@@ -996,14 +997,12 @@ a.label {
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 25px;
   background: #2c3e50;
-  background: linear-gradient(180deg, #2c3e50 0%, rgba(44, 62, 80, 0.7) 50%, rgba(44, 62, 80, 0) 100%);
+  background: linear-gradient(180deg, rgba(44, 62, 80, 0.9) 0%, rgba(44, 62, 80, 0.7) 50%, rgba(44, 62, 80, 0) 100%);
 }
 #contact-map .map-canvas {
   background: #2C3E50;
-  background: transparent;
-  padding-top: 10px;
 }
 
 #contact-detail {
