@@ -1,5 +1,5 @@
 #contact-head 
-    height: 280px
+    height: 250px
     background: $grey
 
     .contact-intro
@@ -13,8 +13,26 @@
             font-size: 18px
 
 #contact-map
-    height: 450px
+    height: 460px
     display: block
+    // background: $grey
+    position: relative
+    
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        height: 40px
+        background: rgb(44,62,80)
+        background: linear-gradient(180deg, rgba(44,62,80,1) 0%, rgba(44,62,80,0.7) 50%, rgba(44,62,80,0) 100%)
+        // filter: blur(1px)
+
+    .map-canvas
+        background: $grey
+        background: transparent
+        padding-top: 10px
 
 
 #contact-detail
