@@ -90,6 +90,10 @@ html {
   box-sizing: inherit;
 }
 
+*::selection {
+  background-color: #FFCB31;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -191,11 +195,11 @@ section {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  transition: all 0.2s ease;
+  position: relative;
 }
 .main-nav a:hover, .main-nav a:active {
   color: #FFCB31 !important;
-  transform: translateY(1px);
+  transition: all 0.3s ease;
 }
 .main-nav .responsive-nav {
   padding-top: 14px;
