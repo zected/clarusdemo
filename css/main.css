@@ -822,7 +822,7 @@ a.label {
 }
 
 .bg-servis {
-  background-image: url("asset/img/bg-slider6.jpg");
+  background-image: url("/asset/img/bg-slider6.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
