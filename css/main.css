@@ -769,7 +769,7 @@ a.label {
   line-height: 1.8;
   font-size: 20px;
   padding-left: 24px;
-  list-style-image: url("/asset/icon/icon-list.png");
+  list-style-image: url("/../asset/icon/icon-list.png");
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1441px) {
@@ -822,7 +822,7 @@ a.label {
 }
 
 .bg-servis {
-  background-image: url("/asset/img/bg-slider6.jpg");
+  background-image: url("/../asset/img/bg-slider6.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
