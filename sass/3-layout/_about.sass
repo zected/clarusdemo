@@ -1,6 +1,7 @@
 #about
     height: 700px
     text-align: center
+    background: linear-gradient(180deg, rgba(246,246,246,1) 0%, rgba(255,255,255,0) 100%)
 
     img 
         border-radius: 4px
@@ -35,7 +36,20 @@
         margin-bottom: 40px
 
 .vision-btn
-    margin-top: 80px
+    margin-top: 20px
+
+@media only screen and (min-width: 1920px)
+    #about 
+        height: 780px
+    .about-r
+        margin: auto
+        width: 100%
+        img 
+            max-width: 600px
+    // .about-l
+    //     p
+    //         font-size: 18px
+    //         line-height: 1.6
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
     #about 
