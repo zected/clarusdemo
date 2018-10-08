@@ -659,7 +659,7 @@ a.label {
 
 #intro-about {
   height: calc(100vh - 8em);
-  background-image: url("/../asset/img/bg-slider6.jpg");
+  background-image: url("/asset/img/bg-slider6.jpg");
   background-color: #2C3E50;
   background-blend-mode: overlay;
   background-position: center;
