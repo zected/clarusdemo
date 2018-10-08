@@ -82,7 +82,7 @@ sr.reveal('#main-fitur, .whatwedo',{
 sr.reveal('.fitur-card',{
     duration: 500,
     delay: 1000,
-    interval: 350,
+    interval: 300,
 });
 
 // sr.reveal('.data',{

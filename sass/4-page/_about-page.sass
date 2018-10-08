@@ -9,26 +9,28 @@
 
 #intro-about 
     height: calc(100vh - 8em)
-    background-image: url('/asset/img/bg-clarus1.jpg')
+    background-image: url('http://clarus-it.co.id/v1/asset/img/bg-clarus2.jpg')
+    background-color: $grey
+    background-blend-mode: overlay
     background-position: center
     background-size: cover
     background-repeat: no-repeat
     overflow: hidden
     position: relative
     display: flex
-    z-index: -1
+    // z-index: 1
 
-    &::before
-        position: absolute
-        content: ""
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        background: $grey
-        opacity: .6
-        overflow: hidden
-        z-index: -1
+    // &::before
+    //     position: absolute
+    //     content: ""
+    //     top: 0
+    //     left: 0
+    //     right: 0
+    //     bottom: 0
+    //     background-color: $yellow
+    //     // opacity: .6
+    //     overflow: hidden
+    //     z-index: -1
 
 
 // .bg-about
@@ -63,7 +65,7 @@
         font-size: 28px
 
 #about-content
-    height: 600px
+    height: 550px
     h3 
         text-align: center
  

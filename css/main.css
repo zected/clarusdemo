@@ -91,6 +91,7 @@ html {
 }
 
 *::selection {
+  color: white;
   background-color: #FFCB31;
 }
 
@@ -211,7 +212,7 @@ section {
   display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .main-nav .toggle-button {
     display: block;
     padding-top: 10px;
@@ -658,26 +659,15 @@ a.label {
 
 #intro-about {
   height: calc(100vh - 8em);
-  background-image: url("/asset/img/bg-clarus1.jpg");
+  background-image: url("http://clarus-it.co.id/v1/asset/img/bg-clarus2.jpg");
+  background-color: #2C3E50;
+  background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
   display: flex;
-  z-index: -1;
-}
-#intro-about::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2C3E50;
-  opacity: 0.6;
-  overflow: hidden;
-  z-index: -1;
 }
 
 .about-intro {
@@ -693,7 +683,7 @@ a.label {
 }
 
 #about-content {
-  height: 600px;
+  height: 550px;
 }
 #about-content h3 {
   text-align: center;
@@ -832,7 +822,7 @@ a.label {
 }
 
 .bg-servis {
-  background-image: url("/asset/img/bg-slider6.jpg");
+  background-image: url("http://clarus-it.co.id/v1/asset/img/bg-slider6.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -945,6 +935,10 @@ a.label {
 }
 .main-partner img {
   width: 90%;
+}
+
+.partner-card {
+  width: 100%;
   transition: all 0.2s ease;
 }
 
