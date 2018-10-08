@@ -659,7 +659,7 @@ a.label {
 
 #intro-about {
   height: calc(100vh - 8em);
-  background-image: url("http://clarus-it.co.id/v1/asset/img/bg-clarus2.jpg");
+  background-image: url("asset/img/bg-clarus2.jpg");
   background-color: #2C3E50;
   background-blend-mode: overlay;
   background-position: center;
