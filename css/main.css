@@ -112,9 +112,9 @@ body a:visited {
   width: 85%;
   margin: auto;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (min-width: 1281px) {
   .wrapper {
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
 }
@@ -279,7 +279,7 @@ section {
   color: white;
   position: relative;
   z-index: 50;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 
 .intro-article {
@@ -312,10 +312,34 @@ a.label {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 1281px) {
+  .article {
+    margin: 220px auto;
+  }
+  .article h2 {
+    font-size: 42px;
+    font-weight: 500;
+  }
+  .article p {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .article {
+    width: 90%;
+    margin-top: 200px;
+  }
+  .article h2 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .article p {
+    font-size: 18px;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .article {
     width: 90%;
-    vertical-align: middle;
   }
   .article h2 {
     font-size: 32px;
@@ -328,7 +352,6 @@ a.label {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .article {
     width: 90%;
-    vertical-align: middle;
     margin: 100px auto 20px auto;
   }
   .article h2 {
@@ -340,7 +363,7 @@ a.label {
   }
 }
 #about {
-  height: 850px;
+  height: 760px;
   text-align: center;
 }
 #about img {
@@ -367,8 +390,10 @@ a.label {
 }
 
 .about-r {
-  max-width: 500px;
   width: 100%;
+}
+.about-r img {
+  max-width: 500px;
   height: auto;
 }
 
@@ -386,9 +411,30 @@ a.label {
   margin-top: 80px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   #about {
-    height: 1000px;
+    height: 950px !important;
+  }
+
+  .content-about {
+    display: block;
+    margin: 0;
+  }
+
+  .about-r {
+    text-align: center;
+  }
+
+  .about-r, .about-l {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #about {
+    height: 950px;
+  }
+
+  .main-about {
     text-align: center;
   }
 
@@ -404,9 +450,12 @@ a.label {
   .about-r {
     display: inline !important;
   }
+  .about-r img {
+    max-width: 320px;
+  }
 }
 #main {
-  height: 1000px;
+  height: 980px;
   text-align: center;
 }
 #main a {
@@ -472,7 +521,7 @@ a.label {
   }
 }
 #partner {
-  height: 450px;
+  height: 480px;
   background: #F7F9FA;
   display: flex;
   text-align: center;
@@ -635,6 +684,15 @@ a.label {
   transform: translateY(2px);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #header {
+    height: 100vh;
+  }
+
+  .bg-slide {
+    height: 100vh;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #header {
     height: 580px !important;
@@ -678,6 +736,7 @@ a.label {
 .about-intro p {
   display: block;
   margin: auto;
+  padding-bottom: 20px;
   font-weight: lighter !important;
   font-size: 28px;
 }
@@ -777,6 +836,14 @@ a.label {
     max-height: 720px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #about-content {
+    height: 720px;
+  }
+  #about-content .about-r {
+    margin: auto;
+  }
+}
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   #vision {
     height: 320px;
@@ -790,13 +857,13 @@ a.label {
     height: 680px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   #navbar {
     background: #2C3E50;
   }
 
   #about-content {
-    height: 800px;
+    height: 680px;
     text-align: center;
   }
 
@@ -877,6 +944,13 @@ a.label {
   line-height: 1.6;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .servis-article {
+    width: 90%;
+    margin: 154px auto;
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 840px) {
   #servis-header .servis-article {
     width: 100%;
