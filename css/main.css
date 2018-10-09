@@ -347,6 +347,12 @@ a.label {
     font-size: 18px;
   }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .article {
+    width: 90%;
+    margin-top: 250px;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .article {
     width: 90%;
@@ -376,6 +382,7 @@ a.label {
   height: 700px;
   text-align: center;
   background: linear-gradient(180deg, #f6f6f6 0%, rgba(255, 255, 255, 0) 100%);
+  overflow: hidden;
 }
 #about img {
   border-radius: 4px;
@@ -448,6 +455,32 @@ a.label {
 
   .about-r, .about-l {
     padding: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  #about {
+    height: 825px;
+  }
+
+  .main-about {
+    text-align: center;
+  }
+
+  .content-about {
+    display: block;
+    margin: 0;
+  }
+
+  .about-r, .about-l {
+    padding: 0;
+  }
+
+  .about-r {
+    margin: auto;
+    width: 100%;
+  }
+  .about-r img {
+    max-width: 450px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -534,13 +567,24 @@ a.label {
     margin: 40px auto 80px auto;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
   .fitur {
-    margin: 40px 10px;
+    margin: 40px 20px;
   }
 
   .card {
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 16px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .fitur {
+    width: 70%;
+    margin: 40px auto;
+  }
+
+  .card {
+    grid-template-columns: repeat(2, auto);
     grid-gap: 16px;
   }
 }
@@ -648,7 +692,7 @@ a.label {
 
 .footbot {
   margin-top: 60px;
-  bottom: 0%;
+  bottom: 1%;
 }
 .footbot p {
   font-size: 12px;
