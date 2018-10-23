@@ -517,7 +517,7 @@ a.label {
 }
 
 .fitur {
-  margin: 80px auto;
+  margin: 80px auto !important;
   text-align: center;
   color: #34495e;
 }
@@ -539,7 +539,6 @@ a.label {
 }
 
 .fitur-card {
-  background: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0px 2px 35px -4px rgba(0, 64, 128, 0.2);
@@ -766,21 +765,21 @@ a.label {
   }
 }
 #intro-about {
-  height: calc(100vh - 8em);
+  height: 90vh;
   background-image: url("../asset/img/bg-clarus2.jpg");
-  background-color: #2C3E50;
+  background-color: rgba(0, 35, 255, 0.7);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
-  display: flex;
 }
 
 .about-intro {
   text-align: center;
   color: white;
+  padding-top: 4em;
   margin: 25vh auto;
 }
 .about-intro h2 {
