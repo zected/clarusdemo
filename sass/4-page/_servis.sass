@@ -1,6 +1,6 @@
 #servis-header
     margin: 0
-    height: 100vh
+    height: 90vh
     max-height: 750px
     z-index: 1
     color: white
@@ -14,33 +14,37 @@
     position: relative
     background-repeat: no-repeat
     z-index: -5
-    &:before
+    &:after
         position: absolute
         content: ""
         top: 0
         left: 0
         right: 0
         bottom: 0
-        background: rgb(0,0,0)
-        background: linear-gradient(90deg, rgba(0,0,0,0.95) 25%, rgba(0,0,0,0.5) 100%)
+        background: rgba(0,35,255,0.85)
+        // background: linear-gradient(90deg, rgba(0,0,0,0.95) 25%, rgba(0,0,0,0.5) 100%)
+        mix-blend-mode: hue
+        mix-blend-mode: color
+        mix-blend-mode: hard-light
         z-index: -4
 
 .servis-article
-    margin-top: 100px
+    margin-top: 25vh
     width: 50%
     z-index: -1
     
     h2 
         margin-bottom: 0
     p
+        margin-top: 0
         font-weight: 300
-        font-size: 18px !important
+        font-size: 24px !important
         line-height: 1.8
 
-.servis-button
-    text-align: center
-    display: inline-block
-    margin-left: 0px
+// .servis-button
+//     text-align: center
+//     display: inline-block
+//     margin-left: 0px
 
 .our-servis
     margin: 80px auto 40px auto
@@ -54,6 +58,7 @@
         letter-spacing: 0.1em
 
     p
+        text-align: center
         font-size: 18px
         line-height: 1.6
 

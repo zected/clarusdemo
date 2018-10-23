@@ -1,6 +1,9 @@
+#navbar
+    background: $light
+    
 .main-nav
     display: flex
-    margin-top: 20px
+    margin: 0
     padding: 0
     z-index: 100
 
@@ -13,7 +16,6 @@
             height: 52px
 
     a
-        color: white !important
         font-weight: 500
         display: block
         padding: 10px 20px
@@ -21,7 +23,7 @@
         position: relative
     
     a:hover, a:active
-        color: $yellow !important
+        color: $blue
         transition: all 0.3s ease   
         // transform: translateY(1px)
 
@@ -38,6 +40,8 @@
 //         padding-right: 0
 //         padding-left: 0
 
+.link-active
+    color: $blue !important
 
 @media screen and (max-width: 768px)
     .main-nav
