@@ -79,6 +79,12 @@ li {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+p {
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -153,6 +159,7 @@ section {
   padding: 15px 30px;
   border-radius: 100px;
   transition: all 0.2s ease;
+  z-index: 10;
 }
 .button-primary:hover, .button-primary:active {
   background: #FFCB31;
@@ -1128,6 +1135,89 @@ a.label {
     grid-template-columns: repeat(2, auto);
     grid-gap: 20px;
     grid-auto-rows: 80px;
+  }
+}
+#intro-career {
+  height: 90vh;
+  background-image: url("/asset/img/bg-career.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+#intro-career::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 112, 196, 0.75);
+  mix-blend-mode: multiply;
+  overflow: hidden;
+}
+
+.cont-career {
+  text-align: center;
+  padding-top: 4em;
+  margin: 20vh auto;
+  position: relative;
+  z-index: 10;
+}
+.cont-career h2 {
+  color: #FFCB31;
+  margin: 0;
+}
+.cont-career p {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.btn-career {
+  margin-top: 1em;
+}
+
+#board {
+  background: #f6f6f6;
+}
+
+.job-board {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.theboard {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 40px;
+}
+.job-card p {
+  color: #FFCB31;
+}
+
+.btn-job {
+  text-align: center;
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  .theboard {
+    grid-template-columns: repeat(2, auto);
+    -webkit-grid-template-column: repeat(2, auto);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .theboard {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 16px;
   }
 }
 #contact-head {
