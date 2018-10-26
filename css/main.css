@@ -1139,7 +1139,7 @@ a.label {
 }
 #intro-career {
   height: 90vh;
-  background-image: url("/asset/img/bg-career.jpg");
+  background-image: url("../asset/img/bg-career.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
