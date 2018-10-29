@@ -49,33 +49,54 @@
     margin-bottom: 4em
 
 .theboard
-    display: grid
-    grid-template-columns: repeat(2, auto)
-    grid-gap: 20px
+    // display: grid
+    // grid-template-columns: repeat(2, auto)
+    // grid-gap: 20px
+    // width: 45%
+    display: flex
+    flex-wrap: nowrap
+    direction: row
+    justify-content: space-around
 
 .job-card
     background: white
     padding: 40px
+    width: 48%
+    position: relative
 
+.inside
+    margin-bottom: 5em
     p 
         color: $yellow
 
 .btn-job
+    margin-top: 4em
+    display: inline-block
     text-align: center
-    margin-top: 2em
-    // // position: absolute
-    // // // left: 50%
-    // bottom: 5vh
+    position: absolute
+    left: 50%            
+    bottom: 2em
+    transform: translateX(-50%)
 
 
-@media only screen and (min-width: 1024px) and (orientation: landscape)
-    .theboard
-        grid-template-columns: repeat(2, auto)
-        -webkit-grid-template-column: repeat(2, auto)
-        grid-gap: 20px
+// @media only screen and (min-width: 1024px) and (orientation: landscape)
+//     .theboard
+//         grid-template-columns: repeat(2, auto)
+//         -webkit-grid-template-column: repeat(2, auto)
+//         grid-gap: 20px
 
 
 @media only screen and (min-width: 320px) and (max-width: 767px)
+    .job-card
+        width: 100%
+        margin-bottom: 1em
+
     .theboard
-        grid-template-columns: repeat(1, auto)
-        grid-gap: 16px
+        display: flex
+        flex-wrap: wrap
+        direction: columns
+        justify-content: space-around
+
+    // .theboard
+    //     grid-template-columns: repeat(1, auto)
+    //     grid-gap: 16px

@@ -1,0 +1,23 @@
+{
+  "name": "clarusdemo",
+  "version": "1.0.0",
+  "description": "landing page clarus",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zected/zected.github.io.git"
+  },
+  "author": "zected",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zected/zected.github.io/issues"
+  },
+  "homepage": "https://github.com/zected/zected.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0"
+  }
+}
